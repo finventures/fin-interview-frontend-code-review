@@ -8,13 +8,14 @@
   "private": true,
   "scripts": {
     "build": "node build.js",
-    "serve": "cd build && python -m http.server 4321"
+    "watch": "node build.js --watch & http-server ./build --port 8000"
   },
   "dependencies": {
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
   },
   "devDependencies": {
-    "esbuild": "^0.14.21"
+    "esbuild": "^0.14.21",
+    "http-server": "^14.1.0"
   }
 }
