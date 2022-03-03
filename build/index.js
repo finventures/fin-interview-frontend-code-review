@@ -20474,7 +20474,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   }
   ReactDOM.render(/* @__PURE__ */ import_react.default.createElement(TodoList, {
     user: "Trent",
-    todo1: "Eat bananas",
+    todo1: "Eat something else",
     todo2: "Code"
   }), document.getElementById("root"));
 })();

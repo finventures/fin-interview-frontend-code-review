@@ -1,6 +1,8 @@
 const esbuild = require("esbuild");
 const fs = require("fs");
 
+const argsContain = (arg) => process.argv.indexOf(arg) >= 0;
+
 if (fs.existsSync("./build")) {
   fs.rmdirSync("./build", { recursive: true, force: true });
 }
@@ -13,6 +15,15 @@ esbuild
     entryPoints: ["./src/index.jsx"],
     bundle: true,
     outfile: "./build/index.js",
+    watch: argsContain("--watch")
+      ? {
+          onRebuild: (error) => {
+            if (error) {
+              console.error("Build failed!", error);
+            }
+          },
+        }
+      : undefined,
   })
   .catch((error) => {
     console.error(error);
