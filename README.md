@@ -1,0 +1,1 @@
+See the [Notion documentation](https://www.notion.so/finxpc/Frontend-code-review-interview-0489d7ed0a3e4d7595143ef2738d1ec9) for more information.
