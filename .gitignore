@@ -1,0 +1,5 @@
+# Node dependencies
+node_modules/
+
+# IMPORTANT: Do not ignore the build/ direcotry,
+# as that is what is hosted in github pages.

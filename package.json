@@ -1,0 +1,20 @@
+{
+  "name": "frontend-code-review",
+  "version": "1.0.0",
+  "description": "Coding challenge for frontend candidates",
+  "main": "src/index.js",
+  "author": "Trent Small",
+  "license": "Proprietary",
+  "private": true,
+  "scripts": {
+    "build": "node build.js",
+    "serve": "cd build && python -m http.server 4321"
+  },
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "esbuild": "^0.14.21"
+  }
+}
