@@ -20,6 +20,8 @@ esbuild
           onRebuild: (error) => {
             if (error) {
               console.error("Build failed!", error);
+            } else {
+              console.log("Build successful.");
             }
           },
         }
