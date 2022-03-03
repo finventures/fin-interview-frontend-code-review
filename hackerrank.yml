@@ -6,4 +6,4 @@ configuration:
       - src/index.jsx
     project_menu:
       install: yarn install
-      run: yarn build && yarn serve
+      run: yarn watch
